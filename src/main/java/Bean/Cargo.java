@@ -20,6 +20,7 @@ public class Cargo {
         return logmessage;
     }
 
+    
     public void setLogmessage(String logmessage) {
         this.logmessage = logmessage;
     }
