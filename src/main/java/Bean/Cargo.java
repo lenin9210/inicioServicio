@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.serviciocomun.bean;
+package Bean;
 
 /**
  *
@@ -12,19 +12,17 @@ package com.mycompany.serviciocomun.bean;
 public class Cargo {
     
     
-    
     private String descripcion;
     private String codigo;
-    private String mensaje;
+    private String logmessage;
 
-    public String getMensaje() {
-        return mensaje;
+    public String getLogmessage() {
+        return logmessage;
     }
 
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
+    public void setLogmessage(String logmessage) {
+        this.logmessage = logmessage;
     }
-    
     
 
     public String getDescripcion() {
@@ -42,7 +40,5 @@ public class Cargo {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-    
-    
     
 }

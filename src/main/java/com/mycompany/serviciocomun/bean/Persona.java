@@ -27,6 +27,8 @@ public class Persona {
     }
     
     
+    
+    
 
     public String getNombre1() {
         return nombre1;
