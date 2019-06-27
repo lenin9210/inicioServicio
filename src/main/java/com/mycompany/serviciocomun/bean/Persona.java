@@ -15,6 +15,18 @@ public class Persona {
     private String nombre2;
     private String apellido1;
     private String apellido2;
+    
+    private String mensaje;
+
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
+    }
+    
+    
 
     public String getNombre1() {
         return nombre1;
