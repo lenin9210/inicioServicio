@@ -11,10 +11,18 @@ package Bean;
  */
 public class Cargo {
     
-    
     private String descripcion;
     private String codigo;
     private String logmessage;
+    
+    public  Cargo(String descripcion,String codigo,String logmessage){
+        
+    this.descripcion=descripcion;
+    this.codigo=codigo;
+    this.logmessage=logmessage;
+        
+        
+    }
 
     public String getLogmessage() {
         return logmessage;
