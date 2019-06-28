@@ -20,8 +20,6 @@ public class Cargo {
     this.descripcion=descripcion;
     this.codigo=codigo;
     this.logmessage=logmessage;
-        
-        
     }
 
     public String getLogmessage() {
