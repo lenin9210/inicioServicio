@@ -28,5 +28,20 @@ public class Operaciones {
         
     }
     
+    @RequestMapping("/registrarpersonal")
+    public Cargo registrarpersonal(@RequestParam(value="name", defaultValue="World") String name) {
+        
+        return null;
+        
+    }
+    
+    
+     @RequestMapping("/actualizarpersonal")
+    public Cargo actualizarpersonal(@RequestParam(value="name", defaultValue="World") String name) {
+        
+        return null;
+        
+    }
+    
     
 }
