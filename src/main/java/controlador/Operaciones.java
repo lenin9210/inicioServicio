@@ -23,6 +23,7 @@ public class Operaciones {
     
      @RequestMapping("/listaobjetos")
     public Cargo listaobjetos(@RequestParam(value="name", defaultValue="World") String name) {
+        
         return null;
         
     }
