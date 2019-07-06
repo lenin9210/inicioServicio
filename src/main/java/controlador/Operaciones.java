@@ -1,12 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
+
 package controlador;
 
 import Bean.Cargo;
 import java.util.concurrent.atomic.AtomicLong;
+import javax.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,19 +28,24 @@ public class Operaciones {
     
      @RequestMapping("/listaobjetos")
     public Cargo listaobjetos(@RequestParam(value="name", defaultValue="World") String name) {
+        Cargo sa = new Cargo();
+        sa.setCodigo("1");
+        sa.setDescripcion("Descripcion inicial");
         
-        return null;
-        
-        
+        int km = 1600;
+        return sa;
     }
     
     
     @RequestMapping(value="/registrarpersonal",method = RequestMethod.POST)
-    public ResponseEntity   registrarpersonal() {
+    public @ResponseBody Cargo   registrarpersonal(@Valid @RequestBody Cargo d) {
         
-        Cargo sa = null;
+        Cargo sa = new Cargo();
         sa.setCodigo("1");
-       return  new ResponseEntity(sa, HttpStatus.OK);
+        sa.setDescripcion("descripcion desde POST");
+        sa.setLogmessage(d.getLogmessage());
+        
+       return  sa;
    
     }
     

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Bean;
 
 /**
@@ -13,15 +9,11 @@ public class Cargo {
     
     private String descripcion;
     private String codigo;
-    private String logmessage;
+    private String logmessage="";
     
-    public  Cargo(String descripcion,String codigo,String logmessage){
-        
-    this.descripcion=descripcion;
-    this.codigo=codigo;
-    this.logmessage=logmessage;
-    }
+    
 
+    
     public String getLogmessage() {
         return logmessage;
     }
