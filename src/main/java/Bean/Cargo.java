@@ -1,18 +1,29 @@
 
 package Bean;
 
-/**
- *
- * @author lcastilv
- */
+
+
 public class Cargo {
+    
+    
     
     private String descripcion;
     private String codigo;
     private String logmessage="";
+    private String usuario;
     
+    public Cargo(){
     
+    }
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+    
     
     public String getLogmessage() {
         return logmessage;
